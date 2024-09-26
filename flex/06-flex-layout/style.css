@@ -5,6 +5,10 @@ body {
   margin: 0;
   overflow: hidden;
   font-family: Roboto, sans-serif;
+
+  display: flex;
+  flex-direction: column;
+
 }
 
 img {
@@ -16,6 +20,9 @@ button {
   border: none;
   border-radius: 8px;
   background: #eee;
+
+  padding: 5px;
+  margin: 5px;
 }
 
 input {
@@ -23,4 +30,41 @@ input {
   border-radius: 16px;
   padding: 8px 24px;
   width: 400px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: darkslategray;
+}
+
+
+.header,
+.footer{
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 20px;
+}
+
+.content{
+  flex: 1; /* adds growth filling around */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* can use margin-top: auto; too */
+.footer{
+  background-color: #eeeeee;  /* that is why it is */
+}                               /* at  the bottom! */
+
+.left-links,
+.right-links{
+  display: flex;
+  gap: 15px;
 }
